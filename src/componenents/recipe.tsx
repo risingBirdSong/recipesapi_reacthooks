@@ -10,6 +10,11 @@ export const Recipe_C = (props: Hit) => {
       <p> cautions {props.recipe.cautions}</p>
       <img src={props.recipe.image} alt="" />
       <p> source : {props.recipe.source} </p>
+      <ul>
+        {props.recipe.ingredients.map(i => {
+          return <li>{i.text}</li>;
+        })}
+      </ul>
     </div>
   );
 };
