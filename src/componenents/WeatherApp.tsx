@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { WeatherRequest } from "./weathertypes/interface";
-import { WeatherEmojis } from "./weathertypes/weatherEmoji";
+import { WeatherRequest } from "../weathertypes/interface";
+import { WeatherEmojis } from "../weathertypes/weatherEmoji";
 enum appStylingEnum {
   main = "app",
   warm = "app warm"
