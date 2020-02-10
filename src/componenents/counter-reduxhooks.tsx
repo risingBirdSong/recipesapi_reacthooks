@@ -23,11 +23,15 @@ interface ActionI {
 const reducer = (state: AppState = initialState, action: ActionI): AppState => {
   switch (action.type) {
     case ActionEnum.increment:
-      state.count += 1;
-      return state;
+      return {
+        ...state,
+        count: state.count + 1
+      };
     case ActionEnum.decrement:
-      state.count -= 1;
-      return state;
+      return {
+        ...state,
+        count: state.count - 1
+      };
     default:
       return state;
   }
